@@ -3,11 +3,13 @@ import { View, Text, Image } from 'react-native'
 import styles from '../styles'
 
 
-const ProductCard = ({id, name, price, score, imagePath}) => {
-	const id = id
+const ProductCard = ({id, name, price, score, imageString}) => {
+	const identification = id
+	console.log(imageString)
+
   return (
 		<View style={styles.productCardContainer}>
-			<Image source={require(imagePath)}/>
+			<Image source={require('../assets/fifa-18.png')}/>
 			<Text>
 				{name}
 			</Text>
@@ -17,6 +19,9 @@ const ProductCard = ({id, name, price, score, imagePath}) => {
 			<Text>
 				Pontuação: {score}
 			</Text>
+			<View style={styles.buttonCardContainer}>
+
+			</View>
 		</View>
 	)
 }
