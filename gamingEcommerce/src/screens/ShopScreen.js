@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { View, Text } from 'react-native'
-import productsArray from '../products/products.json'
+import products from '../products/products'
 import ProductsList from "../components/ProductsList"
 import styles from "../styles"
 import CartButton from '../components/CartButton'
@@ -15,7 +15,7 @@ const ShopScreen = () => {
 				</View>
 			</View>
 			<View style={{flex: 8}}>
-				<ProductsList array={productsArray} />
+				<ProductsList array={products} />
 
 			</View>
 		</View>
