@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { View, Text, Image } from 'react-native'
 import styles from '../styles'
 import QuantityButton from './QuantityButton'
+import AddToCartButton from './AddToCartButton'
 import {
 superMarioOdyssey,
 callOfDutyInfiniteWarfare,
@@ -13,7 +14,7 @@ terraMediaSombrasdeMordor,
 fifa18,
 horizonZeroDawn,
 
-} from './Icons'
+} from './GameIcons'
 
 const getImage = (id) => {
 	if (id === 312) {
@@ -37,7 +38,7 @@ const getImage = (id) => {
 	}
 }
 
-const ProductCard = ({ id, name, price, score, image }) => {
+const ProductCard = ({ id, name, price, score, addCartPress}) => {
 	const identification = id
 
 	return (
@@ -54,6 +55,9 @@ const ProductCard = ({ id, name, price, score, image }) => {
 			</Text>
 			<View style={styles.buttonCardContainer}>
 				<QuantityButton />
+			</View>
+			<View style={styles.buttonCardContainer}>
+				<AddToCartButton onPress={addCartPress}/>
 			</View>
 		</View>
 	)

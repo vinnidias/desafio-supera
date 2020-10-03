@@ -1,7 +1,7 @@
 const styles = {
     productCardContainer: {
         width: 250,
-        height: 350,
+        height: 380,
         margin: 10,
         padding: 10,
         borderWidth: 1,
@@ -24,7 +24,7 @@ const styles = {
         alignSelf: 'flex-end',
         margin: 20
     },
-    
+
     buttonCardContainer: {
         flexDirection: 'row'
     },
@@ -54,14 +54,35 @@ const styles = {
         backgroundColor: 'gold',
         width: 30,
         height: 33,
-        padding: 5, 
+        padding: 5,
         alignItems: 'flex-end'
     },
 
-    cardText:{
+    cardText: {
         marginTop: 8
     },
-    
+
+    addToCartContaine: {
+        width: 150,
+        height: 35,
+        borderWidth: 1,
+        backgroundColor: '#1e90ff',
+        margin: 10,
+        padding: 5,
+        flexDirection: 'row'
+    },
+
+    addToCartIcon: {
+        width: 23,
+        height: 18,
+        alignSelf: 'center'
+    },
+
+    addToCartText: {
+        color: 'white',
+        fontSize: 12,
+        marginLeft: 4,
+    }
 }
 
 export default styles
