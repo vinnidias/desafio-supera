@@ -1,26 +1,59 @@
 import React, { useState } from 'react'
 import { View, Text, Image } from 'react-native'
 import styles from '../styles'
+import QuantityButton from './QuantityButton'
+import {
+superMarioOdyssey,
+callOfDutyInfiniteWarfare,
+theWitcherIIIWildHunt,
+callOfDutyWWII,
+mortalKombatXL,
+shardsofDarkness,
+terraMediaSombrasdeMordor,
+fifa18,
+horizonZeroDawn,
 
+} from './Icons'
 
-const ProductCard = ({id, name, price, score, imageString}) => {
+const getImage = (id) => {
+	if (id === 312) {
+		return superMarioOdyssey
+	} if (id === 201) {
+		return callOfDutyInfiniteWarfare
+	} if (id === 102) {
+		return theWitcherIIIWildHunt
+	} if (id === 99) {
+		return callOfDutyWWII
+	} if (id === 12) {
+		return mortalKombatXL
+	} if (id === 74) {
+		return shardsofDarkness
+	} if (id === 31) {
+		return terraMediaSombrasdeMordor
+	} if (id === 420) {
+		return fifa18
+	} if (id === 501) {
+		return horizonZeroDawn
+	}
+}
+
+const ProductCard = ({ id, name, price, score, image }) => {
 	const identification = id
-	console.log(imageString)
 
-  return (
+	return (
 		<View style={styles.productCardContainer}>
-			<Image source={require('../assets/fifa-18.png')}/>
-			<Text>
+			<Image source={getImage(id)} />
+			<Text style={styles.cardText}>
 				{name}
 			</Text>
 			<Text>
 				R${price}
 			</Text>
 			<Text>
-				Pontuação: {score}
+				Popularidade: {score} pts
 			</Text>
 			<View style={styles.buttonCardContainer}>
-
+				<QuantityButton />
 			</View>
 		</View>
 	)

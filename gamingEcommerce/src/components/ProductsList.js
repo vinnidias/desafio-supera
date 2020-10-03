@@ -11,7 +11,7 @@ const ProductsList = ({ array }) => {
                 name={product.name}
                 price={product.price}
                 score={product.score}
-                imageString={product.image}
+                image={product.image}
             />)}
         </ScrollView>
     )
