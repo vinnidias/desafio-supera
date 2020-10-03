@@ -10,7 +10,8 @@ const styles = {
     },
 
     shopScreenContainer: {
-        flex: 1
+        flex: 1,
+        backgroundColor: 'white'
     },
 
     shopScreenHeader: {
@@ -26,7 +27,41 @@ const styles = {
     
     buttonCardContainer: {
         flexDirection: 'row'
-    }
+    },
+
+    quantityButton: {
+        width: 150,
+        height: 35,
+        justifyContent: 'space-between',
+        borderWidth: 1,
+        alignSelf: 'center',
+        marginTop: 10,
+        flexDirection: 'row'
+    },
+
+    quantityText: {
+        marginVertical: 5
+    },
+
+    minusButton: {
+        backgroundColor: 'gold',
+        width: 30,
+        height: 33,
+        padding: 5
+    },
+
+    plusButton: {
+        backgroundColor: 'gold',
+        width: 30,
+        height: 33,
+        padding: 5, 
+        alignItems: 'flex-end'
+    },
+
+    cardText:{
+        marginTop: 8
+    },
+    
 }
 
 export default styles
