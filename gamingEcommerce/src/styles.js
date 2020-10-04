@@ -17,7 +17,9 @@ const styles = {
     shopScreenHeader: {
         flex: 1,
         height: 80,
-        backgroundColor: '#1e90ff'
+        backgroundColor: '#1e90ff',
+        justifyContent: 'space-between',
+        flexDirection: 'row'
     },
 
     cartHeader: {
@@ -93,8 +95,9 @@ const styles = {
         flex: 1,
         height: 80,
         backgroundColor: '#1e90ff',
-        justifyContent: 'center',
-        alignItems: 'center'
+        padding: 10,
+        alignItems: 'center',
+        flexDirection: 'row'
     },
 
     cartScreenHeaderText: {
@@ -143,6 +146,14 @@ const styles = {
         padding: 10,
         alignItems: 'center',
         alignSelf: 'center'
+    },
+
+    shopHeaderText: {
+        fontSize: 18, 
+        fontWeight: 'bold', 
+        color: 'white', 
+        alignSelf: "center", 
+        marginLeft: 120
     }
 }
 
