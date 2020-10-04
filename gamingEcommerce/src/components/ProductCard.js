@@ -54,10 +54,7 @@ const ProductCard = ({ id, name, price, score, addCartPress}) => {
 				Popularidade: {score} pts
 			</Text>
 			<View style={styles.buttonCardContainer}>
-				<QuantityButton />
-			</View>
-			<View style={styles.buttonCardContainer}>
-				<AddToCartButton onPress={addCartPress}/>
+				<AddToCartButton onPress={()=> addCartPress(id, name, price, score) }/>
 			</View>
 		</View>
 	)

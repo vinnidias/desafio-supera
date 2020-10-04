@@ -9,6 +9,7 @@ const QuantityButton = () => {
 			<TouchableOpacity onPress={() => {
 				if (quantity <= 1) {
 					setQuantity(1)
+					return quantity
 				} else { setQuantity(quantity - 1) }
 			}} >
 				<View style={styles.minusButton}>
@@ -20,7 +21,10 @@ const QuantityButton = () => {
 			<Text style={styles.quantityText}>
 				Qtd: {quantity}
 			</Text>
-			<TouchableOpacity onPress={() => setQuantity(quantity + 1)} >
+			<TouchableOpacity onPress={() => {
+					setQuantity(quantity + 1)
+					return quantity
+					} } >
 				<View style={styles.plusButton}>
 					<Text style={{ alignSelf: 'center' }}>
 						➕
