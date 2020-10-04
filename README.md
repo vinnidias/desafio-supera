@@ -17,7 +17,7 @@ npm install
 
 Para iniciar o aplicativo, após a instalação do mesmo, é necessário o AndroidStudio instalado em seu computador,
 você também pode emular a aplicação em um dispositivo android seguindo as orientações descritas no próprio site do React Native
-na seção ['Using a physical device'] (https://reactnative.dev/docs/environment-setup).
+na seção ['Using a physical device'](https://reactnative.dev/docs/environment-setup).
 Abra o terminal e navegue até a pasta gamingEcomerce em seu repositório local e execute o comando npm run android e aguarde o app ser 'buildado',
 pode levar alguns minutos. Após 'buildado' o app estará pronto e rodando no dispositivo.
 
