@@ -11,6 +11,9 @@ const ShopScreen = ({navigation}) => {
 	return (
 		<View style={styles.shopScreenContainer}>
 			<View style={styles.shopScreenHeader}>
+				<Text style={styles.shopHeaderText}>
+					Loja De Jogos!
+				</Text>
 				<View style={styles.cartHeader}>
 					<CartButton onPress={()=> navigation.navigate('CartScreen', {cart})}/>
 				</View>
