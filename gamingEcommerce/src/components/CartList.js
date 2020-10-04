@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
-import ProductCard from './ProductCard'
+import CartProductCard from './CartProductCart'
 
 
-const ProductsList = ({ array, onPress }) => {
+const CartList = ({ array, onPress }) => {
     return (
         <ScrollView>
-            {array.sort((a,b)=> a.price - b.price).map(product => <ProductCard
+            {array.sort((a,b)=> a.price - b.price).map(product => <CartProductCard
                 id={product.id}
                 name={product.name}
                 price={product.price}
                 score={product.score}
-                addCartPress={onPress}
+                onPress={onPress}
             />)}
         </ScrollView>
     )
 }
 
-export default ProductsList
+export default CartList
